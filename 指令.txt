@@ -1,0 +1,7 @@
+conda activate yolov5 
+
+cd C:\Users\TMS-Product\Desktop\Tambassador\yolov5-master
+
+python train.py --data ../dataset2020new/datanew.yaml --cfg yolov5s.yaml --weights '' --batch-size 4 --epoch 100
+
+python val.py --weights C:\Users\TMS-Product\Desktop\Tambassador\yolov5-master\runs\train\exp27\weights\best.pt --data C:\Users\TMS-Product\Desktop\Tambassador\dataset2020new\data.yaml --img 640 --iou 0.5 --half --task test
